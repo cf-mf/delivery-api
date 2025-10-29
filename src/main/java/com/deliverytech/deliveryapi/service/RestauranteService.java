@@ -4,12 +4,15 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.deliverytech.deliveryapi.entity.Restaurante;
 import com.deliverytech.deliveryapi.repository.RestauranteRepository;
 
 import org.springframework.transaction.annotation.Transactional;
 
+@Service
+@Transactional
 public class RestauranteService {
 
     @Autowired
